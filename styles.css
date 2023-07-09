@@ -1,28 +1,52 @@
 html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
+	color: #19141f;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
 }
 
 body {
+	height: 100vh;
 	margin: 0;
 	display: grid;
+	background-color: #f3f4f6;
 }
 
 main {
 	display: flex;
-	background-color: #f3f4f6;
 	flex-direction: column;
 	justify-content: center;
-	height: 100vh;
 	padding: 0 40px;
+}
+
+p {
+	max-width: 75ch;
+}
+
+section > div {
+	font-size: 1.25rem;
+	font-weight: 500;
 }
 
 a {
 	background-color: transparent;
+	color: #7794c1;
 }
 
+a:hover {
+	color: #c0c2ce;
+}
+
+/* a:visited {
+	color: #ce2250;
+} */
+
 h1 {
+	font-family: "Oswald", sans-serif;
+	font-weight: 600;
 	font-size: 2em;
+	letter-spacing: 0.1em;
 	margin: 0.67em 0;
 }
 
@@ -39,12 +63,13 @@ input {
 input {
 	margin-top: 5px;
 	border-radius: 3px;
+	padding: 5px;
 }
 
 input:focus {
 	outline: none;
 	border: 1px solid #7794c1;
-	box-shadow: 2px 2px 2px #c0c2ce;
+	box-shadow: 2px 2px 5px #c0c2ce;
 }
 
 fieldset {
@@ -65,10 +90,14 @@ fieldset > div {
 	margin-bottom: 10px;
 }
 
+label {
+	text-transform: uppercase;
+}
+
 aside {
 	background-image: url(./imgs/gundam-unicorn.jpg);
 	background-size: cover;
-	background-position: bottom;
+	background-position: center;
 	position: relative;
 	min-height: 300px;
 	display: flex;
@@ -92,13 +121,44 @@ img {
 .photo-src {
 	color: white;
 	position: absolute;
-	bottom: 1px;
+	bottom: 0px;
 	width: 100%;
+	font-size: 0.85rem;
 	text-align: center;
+	text-shadow: 1px 0 10px #19141f;
 }
 
 .photo-src a {
 	color: white;
+}
+
+.photo-src a:hover {
+	color: #f2055c;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	appearance: auto;
+	-webkit-appearance: button;
+	text-transform: none;
+	background-color: #7794c1;
+	color: #f3f4f6;
+	padding: 8px;
+	border-radius: 5px;
+}
+
+button:hover {
+	box-shadow: 2px 2px 2px #c0c2ce;
 }
 
 @media screen and (min-width: 776px) {
