@@ -75,7 +75,7 @@ input:focus {
 fieldset {
 	padding: 0.35em 0.75em 0.625em;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+
 	background-color: white;
 	border: none;
 	padding: 20px 30px 20px;
@@ -86,7 +86,7 @@ fieldset {
 fieldset > div {
 	display: flex;
 	flex-direction: column;
-	max-width: 300px;
+	width: auto;
 	margin: 0 5px 10px;
 }
 
@@ -164,5 +164,9 @@ button:hover {
 @media screen and (min-width: 776px) {
 	body {
 		grid-template-columns: 1fr 2fr;
+	}
+
+	fieldset {
+		grid-template-columns: 1fr 1fr;
 	}
 }
