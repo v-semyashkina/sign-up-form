@@ -86,7 +86,7 @@ fieldset {
 fieldset > div {
 	display: flex;
 	flex-direction: column;
-	width: auto;
+	max-width: 300px;
 	margin: 0 5px 10px;
 }
 
