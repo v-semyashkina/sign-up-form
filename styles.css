@@ -31,7 +31,7 @@ section > div {
 
 a {
 	background-color: transparent;
-	color: #7794c1;
+	color: #405059;
 }
 
 a:hover {
@@ -68,7 +68,7 @@ input {
 
 input:focus {
 	outline: none;
-	border: 1px solid #7794c1;
+	border: 1px solid #405059;
 	box-shadow: 2px 2px 5px #c0c2ce;
 }
 
@@ -108,6 +108,7 @@ aside {
 img {
 	border-style: none;
 	width: 60px;
+	height: 60px;
 }
 
 .heading {
@@ -151,7 +152,7 @@ button,
 	appearance: auto;
 	-webkit-appearance: button;
 	text-transform: none;
-	background-color: #7794c1;
+	background-color: #405059;
 	color: #f3f4f6;
 	padding: 8px;
 	border-radius: 5px;
